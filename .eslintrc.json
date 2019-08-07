@@ -30,15 +30,23 @@
 	"rules": {
 		// import
 		"import/newline-after-import": 1,
-		"import/no-duplicates": 1,
+		"import/no-duplicates": 2,
+		"import/prefer-default-export": 0,
+		"import/no-default-export": 2,
 
 		// prettier
 		"prettier/prettier": "error",
 
 		// react
-		"react/jsx-filename-extension": [1, { "extensions": [".ts", "tsx"] }],
+		"react/jsx-filename-extension": [1, { "extensions": ["ts", "tsx"] }],
+		"react/no-danger": 0,
+		"react/react-in-jsx-scope": 0,
+		"react/no-unescaped-entities": 0,
 
 		// typescript
-		"@typescript-eslint/explicit-function-return-type": "off"
+		"@typescript-eslint/interface-name-prefix": [2, "always"],
+		"@typescript-eslint/explicit-function-return-type": 0,
+		"@typescript-eslint/explicit-member-accessibility": 0,
+		"@typescript-eslint/no-use-before-define": 0
 	}
 }

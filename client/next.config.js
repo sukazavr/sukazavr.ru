@@ -1,7 +1,7 @@
 const path = require('path')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
-const buildFolder = 'build'
+const buildFolder = '../build'
 const rootPath = path.resolve(__dirname, '..')
 const tsconfigPath = path.resolve(__dirname, 'tsconfig.json')
 

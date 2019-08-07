@@ -7,17 +7,21 @@
   "private": true,
   "scripts": {
     "start": "next dev client -p 3092",
-    "export": "next build client && next export client",
-    "serve": "next start client"
+    "export": "next build client && next export -o public client",
+    "lint": "eslint client/generic/Ico.tsx",
+    "serve": "next start client",
+    "deploy": "firebase deploy"
   },
   "engines": {
     "node": ">=10.16.1",
     "npm": ">=6.9.0"
   },
   "dependencies": {
+    "csx": "^9.1.0",
     "next": "^9.0.3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "typestyle": "^2.0.4"
   },
   "devDependencies": {
     "@types/node": "^12.6.9",
